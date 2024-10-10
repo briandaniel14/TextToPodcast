@@ -1,0 +1,2269 @@
+echo360
+Software Testing Lecture_Lecture_0210_00_G.04_Thursday 10:00
+Thu Oct 10
+INFR10057 - Software Testing
+The University of Edinburgh
+HeatmapSourcesCC
+04:49 / 54:51
+Search
+
+Yeah.
+
+Okay, so I think what I'm going to do today
+
+is actually start on time.
+
+Yeah.
+
+So we've got a lot to do to try and
+
+finish this off.
+
+I'm not going to do a lot of interaction this
+
+time because it does slow us down a bit.
+
+And I think mostly here, this is just about content.
+
+And what I'm going to try and do is kind
+
+of give you an overview of these slides, because there's
+
+a whole bunch of, of, uh, stuff that's, that's kind
+
+of useful, but it's, uh, I think it makes the
+
+slides extremely long.
+
+I think there are 66 slides in it.
+
+So we'll go on.
+
+So I think this was more or less where we
+
+were, and this was emphasising the difference between strategy and
+
+plan.
+
+And in general the smaller the organisation the closer those
+
+two are together.
+
+Yeah.
+
+That if you if you only have one product then
+
+your plan is your strategy to some extent.
+
+Yeah.
+
+I mean you might have an idea that you're going
+
+to develop new products and where you're going to.
+
+But typically the strategy deals with concerns that are common
+
+over multiple multiple plans and multiple products, and the plan
+
+is around a specific product, a specific project.
+
+And it's it's you might define what the standard structure
+
+is, uh, in the strategy.
+
+Yeah.
+
+Um, but still that will that will adapt as you
+
+go through the planning process.
+
+So and the idea of this strategy level is that
+
+you really want to do two things for it.
+
+It's something that integrates learning over a number of different
+
+projects.
+
+So the idea is you look back, you see what
+
+you what you've done, you see the kind of assets
+
+you get during that time and you decide what's worked
+
+well and what's worked poorly.
+
+And you try and build that in, in terms of
+
+lessons learned as to how you're going to do things
+
+better in the future, you know?
+
+So, um, I mean, I'm reviewing a large program at
+
+the moment, and the major thing that the program didn't
+
+do was to look at how you actually deployed the
+
+various products that they were producing in the organisation that
+
+they were targeting to use those things.
+
+So it's a so those sorts of things, in future
+
+they will spend more time looking at deployment.
+
+And it's explicit in the sense that when you gather
+
+it in the strategy, people can look at it and
+
+can see what what you've learned.
+
+And the idea is to stop making the same mistakes
+
+again and again and again.
+
+Because if you just go in and you you don't
+
+anticipate certain kinds of problems coming up, then what you
+
+end up with is you end up with the, the,
+
+um, your process is not being very predictable.
+
+You can't see how much they're going to cost, you
+
+can't see how long they're going to take.
+
+And so on and so on.
+
+And so you just keep reliving the errors that you
+
+made in the past.
+
+So that's the, the problem with and that's why you
+
+need strategy.
+
+You need that overview looking at things and what kind
+
+of strategy.
+
+Well size is important.
+
+Yeah.
+
+So when you when you get to larger companies you
+
+can have distinct groups.
+
+So typically in large organisations you will see a quality
+
+group existing who will have responsibility for quality over a
+
+number of different processes that they're carrying on.
+
+You know.
+
+So for example, your overall process might also shape the
+
+way that your strategy works, because if you're typically a
+
+very high reliability organisation, then in that case you will
+
+have very strict strategy that actually restricts the way that
+
+individual projects run.
+
+And then the application domain makes quite a big difference
+
+because, you know, if you look at, um, say avionics
+
+then do 170 B and C are the standard avionics
+
+safety standards and they require quite extensive structural testing.
+
+Yeah.
+
+As part of the evidence generation process.
+
+And typically when you look at safety standards, then they
+
+take account of the likely things that are going to
+
+happen or go wrong within a particular domain and then
+
+require people developing for that domain to, um, to to
+
+ensure that those, those potential risks have been managed well.
+
+And when a new technology comes along, then there's a
+
+huge amount of work to get things to, uh, the
+
+new technology to kind of comply with the expectations of
+
+the past, you know?
+
+So there's lots and lots of concern at the moment
+
+about various forms of artificial intelligence being incorporated into To
+
+health systems, you know.
+
+So because to work the probably need to evolve in
+
+place.
+
+And traditionally there hasn't been an allowance for evolving under
+
+an operational situation in health.
+
+So, um, so what what make a strategy so common
+
+requirements across everything, common set of documents, common activities and
+
+guidelines as to how you work out, how to staff
+
+something and how you choose rules.
+
+And that will be influenced by things like the ACM
+
+Code of Conduct and Ethics.
+
+You know that.
+
+Those sorts of things.
+
+Welcome.
+
+I'm trying to start on time.
+
+Um, so so that's why.
+
+Yeah, I know, but they overrun and then you run
+
+into.
+
+So I'm sorry, but maybe I'll start at five past
+
+in future.
+
+And then there's at least a chance that people will
+
+make it on time.
+
+Um, and guidelines for for staffing and so on, You
+
+know, so if you look at the ACM, uh, Code
+
+of Ethics and Practice, then one of the typical things
+
+that you require is that people should have experience of
+
+having worked on in a particular project, in a particular
+
+project area, before they take on a more senior role
+
+within that area.
+
+So actually, you have to have seen what the practice
+
+looks like before.
+
+You're responsible for controlling that.
+
+And that's a that's a typical thing.
+
+So in organisations people will typically be the typically be
+
+less responsible roles within a particular environment where actually you
+
+can learn what's going on.
+
+And many of the worst, uh, problems that have happened
+
+have arisen from this kind of thing, that people have
+
+been allowed to develop something when they've got significant experience,
+
+but not in the area that the product is being
+
+deployed in.
+
+Um, and if you don't control things, you end up
+
+with things like technical debt where people are making, uh,
+
+people are making, um, decisions.
+
+And those decisions have severe impact on other parts of
+
+the development process or other parts of the architecture.
+
+And I've worked a little bit with people who are
+
+technical architects, and the problem they have is actually working
+
+out how to avoid severe technical debt, where you have
+
+multiple, uh, architects working on a large scale project, and
+
+they're taking independent decisions because those things can work to
+
+lead to really serious problems in terms of how you
+
+realign things later on in the in the development.
+
+Um, don't look at planning now.
+
+So here, when you think about what are you going
+
+to do in a plan, you might say, well, what
+
+activities are you going to do?
+
+How are they dependent on one another?
+
+What do we need to resource them.
+
+And then how will both the process and the product
+
+be monitored?
+
+And this is important because the process monitoring is something
+
+that feeds back into the strategy and kind of decides
+
+how things are going to change.
+
+And the product is important because that's what's going to
+
+hit the ground.
+
+And actually that's where you're that's where your, uh, reputation
+
+will be at risk if you produce a bad product
+
+or where you might even be subject to, to liability,
+
+you know.
+
+So even in the most generic way, there's product liability
+
+legislation, which says that if you're not following current best
+
+practice, then you might be liable in some way if
+
+the product misbehaves.
+
+So and there's a lot of variability in in the
+
+order in which activities are carried out, as long as
+
+dependencies between one activity and another are respected.
+
+And that gives you different kind of characteristics.
+
+So, Um.
+
+What is there in a plan?
+
+So we're talking about the what?
+
+How you structure a plan because you think you should
+
+be thinking about test planning at the moment.
+
+Yeah.
+
+Which is so it's.
+
+What is it that you have to you have to
+
+verify.
+
+Yeah.
+
+So that's the target of the plan.
+
+How are you going to do it.
+
+And that's that'll be both what activities you have.
+
+So that might depend on the skills of the people
+
+that you've got in place.
+
+You know because you don't necessarily want to retrain people
+
+substantially.
+
+And then the other thing is that the the requirements
+
+on the area will impose, uh, requirements on you.
+
+Yeah.
+
+And then you need to think about methods and tool,
+
+and then you need to have some way of evaluating
+
+whether what you get out is actually sensible.
+
+Oops.
+
+Ah.
+
+Okay.
+
+So how do you express quality goals?
+
+Well, there are things that there are properties that have
+
+to be satisfied by the product.
+
+And so you've got typically some kind of things that
+
+you monitor to see whether you're doing the right thing.
+
+So an example of that would be that a new
+
+release of the product has to undergo canary testing with
+
+successively larger populations before release.
+
+You know where you get this thing, where a new
+
+let's see, a new web page will appear to certain
+
+people but not other people.
+
+And then you see how that compares with how things
+
+are going.
+
+So you do canary testing to see if what you've
+
+got is not going to cause people lots of problems.
+
+Of course, in higher criticality situations then that's less practical.
+
+You wouldn't necessarily do canary testing, but what you might
+
+do is require that you build some significant simulation or
+
+that you generate synthetic data to see that it works
+
+with the data and not all.
+
+Not everything.
+
+You don't know everything at the early stages of development.
+
+And what will happen is as you evolve, then tasks
+
+will be refined, potentially into subtasks where you have a
+
+better hold on them, you know?
+
+So you might start out by saying, well, I need
+
+to know that, I don't know.
+
+Let's see.
+
+The fault density in my in this piece of code
+
+here is less than a certain amount.
+
+But you know, that one part is fairly straightforward.
+
+Or as you evolve, one part is fairly straightforward, and
+
+you already have a lot of evidence about the fault
+
+density in it, whereas another piece is new and you
+
+need to spend much more time on it.
+
+And at that point you change the plan to take
+
+account of that and plan it out properly.
+
+And so you have an initial plan.
+
+It's based on incomplete information, and you incrementally refine it
+
+as you go through and scheduling.
+
+So the way that people build schedules is they look
+
+at what they've done in the past and they say,
+
+I've done something like this before.
+
+Um, take the large tasks, meet them into smaller tasks
+
+that are easier to measure and that have let us
+
+see shorter durations but aren't too short.
+
+So you can give somebody a sensible amount of time
+
+to to work on it, or a group of sensible
+
+amount of time to work on it.
+
+You should talk about dependencies so very often, you know.
+
+So for example, um, in a classical approach, if what
+
+you say is I want to do code review before
+
+I start doing unit test, um, then you'd want that
+
+the code review activity, the unit test activity would depend
+
+on the code review activity.
+
+And you'd see this backwards dependency here.
+
+So you want to have the dependencies and then you
+
+schedule activities for you.
+
+Try and see.
+
+Let's not have two big peaks and let's try to
+
+be able to measure progress.
+
+So you should have milestones in there, and you should
+
+be able to recognise when you're making progress and when
+
+you're not making progress.
+
+And so milestones are more than just here's a here's
+
+a deliverable.
+
+Here is something that we've got.
+
+There are more points where people in who are who
+
+are in the project, who are following the plan, can
+
+reflect on where they've gotten to and say, well, am
+
+I really where I expected to be?
+
+So when you put milestones in, they're not necessarily linked
+
+to having a concrete piece of code or a concrete
+
+piece of documentation.
+
+They're more about letting people think, well, am I really
+
+where I should be in the progress of this thing?
+
+So that's the so the idea with, with having things
+
+like milestones in there is that you get track of
+
+what's going on.
+
+Um, and this is a this is a sample schedule,
+
+you know?
+
+So, um.
+
+And so you start off, you do analysis, design, and
+
+then you set off and you start doing coding and
+
+integration, and then simultaneously you produce the user documentation, um,
+
+and then you design and execute subsystem tests and you
+
+design and execute the system tests.
+
+And probably there should be something else along the end
+
+of this that says, actually, you make sure that the
+
+outcome of the tests and the user documentation match up.
+
+Yeah.
+
+Because if you don't have some, if you don't have
+
+something in swim lane seven here.
+
+Yeah, that actually finally validates that the documentation matches what
+
+the stuff does.
+
+Yeah.
+
+Then you might be in serious trouble in terms of
+
+in terms of user satisfaction with the thing.
+
+But notice and this is this is the kind of
+
+classical, uh, problem with these kind of things.
+
+This is very stovepipe.
+
+Yeah.
+
+So there's a, so there's a kind of one after
+
+the other after the other.
+
+These are all kind of rammed together.
+
+They, you strung together in a long thread, except for
+
+this bit of concurrency here in, uh, between these two
+
+tasks.
+
+But you could say, well, let's do it this way.
+
+That's all this is.
+
+The dependencies look like might look like that.
+
+So what do you see is the problem with doing
+
+it that way?
+
+If you were the manager, if you were the resource
+
+manager, what would you say would be the problem?
+
+Yeah, there's a huge effort peak in the middle, isn't
+
+there?
+
+You know, if you look, if you think about Roughly
+
+speaking, each of these represent kind of similar amounts of
+
+effort then the previous one.
+
+You only ever really had two lots of effort required
+
+here.
+
+Yeah.
+
+And it might be this might be quite different skills
+
+because this person might be a technical author.
+
+These people might be coders.
+
+Mhm.
+
+Whereas when you look here at the next one then
+
+you've got a huge spike in the middle.
+
+Yeah.
+
+That you might not be able to staff.
+
+So it's a so in an unconstrained if you've got
+
+unlimited resources this might make some sense.
+
+Um but then again it might be that, that actually
+
+what you prefer would be depending on, on the way
+
+that you want to do it might be that you
+
+want to have continuity.
+
+So the people who do this task might also be
+
+the people who do some of these tasks down here,
+
+you know.
+
+So there's a bunch of different things that you might
+
+want to take into account.
+
+But you can massage this round, you know.
+
+So if you think, um, sorry.
+
+Yeah.
+
+If you think about limited resources, I should point this
+
+down here.
+
+I think if you think about having limited resources, then
+
+it might be the case that you could only ever
+
+have, um, kind of two things happening simultaneously.
+
+So what you might do is you might say, okay,
+
+um, I've got I do my analysis and design, and
+
+then I'm doing the code and integration in parallel with
+
+designing the subsystem tests and then in parallel with the
+
+system tests, and then you produce the user documentation at
+
+the end, and then you do the final testing.
+
+And then you get down to product delivery here.
+
+And this would give you a shorter schedule.
+
+Um, so in in time it might take less because
+
+what you've managed to do is to is to reduce
+
+the stovepipe that you had in the original one.
+
+Um, and it might even produce something better in the
+
+sense that here you're producing the user documentation right at
+
+the end, which at which point you might have a
+
+more sensible idea of what's going to go on.
+
+Um.
+
+And then you might think about what?
+
+How do we understand risks?
+
+Because what you, what you kind of focussed on here
+
+is this.
+
+Yeah.
+
+You want to make sure that you get to product
+
+delivery when you claim it's going to get to.
+
+So you worry about schedule risks.
+
+So you say what's it.
+
+And you have this notion of a critical path.
+
+So it's a chain of activities that have to be
+
+completed in sequence.
+
+So one depends on the next depends on the next
+
+depends on the next.
+
+And that has the maximum overall Duration.
+
+Mhm.
+
+Yeah.
+
+Do you see what I mean.
+
+So what you do is if you look at all
+
+of the activities you've got and then you find the
+
+longest path through it, where, where this uh, where this
+
+activity is depended on by this activity is depended on
+
+by this activity is dependent on this activity.
+
+So they have to be done in sequence.
+
+Yeah.
+
+But when you add up the time for each of
+
+those, that's longer than any other such gene.
+
+And that's what a critical path is.
+
+And a critical dependence is a task on the critical
+
+path scheduled immediately after some other task on the critical
+
+path.
+
+So that's saying, well, if I have an activity here
+
+and that and there's one here that's waiting on this
+
+one to finish, that's a critical dependency.
+
+If that sequence is on a critical path and there
+
+might be, um, multiple critical paths or that are close
+
+to one another, you know, in terms of, in terms
+
+of duration.
+
+So there might be multiple things that could go wrong
+
+in terms of the scheduling and looking at these things
+
+as a way of managing schedule risk.
+
+And what you want to do is you want to
+
+make sure that your critical path, the critical path through
+
+your plan, is shorter than the time that you want
+
+to deliver the product by, you know, so that's the
+
+that's the critical the critical measure.
+
+Um.
+
+And if we look here, we can we can think
+
+about looking at the looking at things and saying, well,
+
+here is a critical schedule.
+
+So you have the project start and then you have
+
+analysis and design and that you think code and integration
+
+depend on that design and execute subsystem test design, execute
+
+system tests produce the user documentation.
+
+That's only depends on the analysis and design having been
+
+done.
+
+Provided you think that this stuff actually gives you what's
+
+up here, you know, so you may not have a
+
+particularly iterative process.
+
+And then you deliver the product at the end.
+
+So the thing about that is what it gives you
+
+is it gives you something that says, okay, we have
+
+to go from beginning January until towards the end of
+
+May in order to get the thing done.
+
+So but what you could do is you look at
+
+if you look at this, then this is the alternate
+
+that we had with the big bump.
+
+And if you look at the durations there, then we
+
+were ending up kind of towards the end of April,
+
+which gives us quite a lot of slack in terms
+
+of when we want to deliver.
+
+But this has got the problem, hasn't it, of the
+
+big bump.
+
+This is the kind of unlimited resources version of the
+
+of the path.
+
+So here this is the our next one.
+
+Yeah.
+
+And there what we end up is still, we've got
+
+probably given ourselves a couple of weeks in May that
+
+we can allow things to slide a little bit.
+
+Yeah.
+
+So it's so looking and seeing how can I, how
+
+can I adjust so that um, so that I get
+
+myself some slack in the, in the schedule and here
+
+the slack is the gap between this and product delivery.
+
+So this is the this is the important thing here.
+
+Um, and this one, you don't have the resource bump
+
+to the same extent.
+
+And also it might be.
+
+Yeah.
+
+Well here, you know, you might, you might manage to,
+
+to produce the documentation early or I mean, this one
+
+doesn't really matter.
+
+It's not really on a critical path because the critical
+
+path is really this one.
+
+Yeah.
+
+Two here Okay, so that's, uh, that's the basics of,
+
+uh, basics of planning process and trying to reduce the
+
+potential of your schedule going awry.
+
+I suppose.
+
+I suppose we should really.
+
+I mean, we should really teach you that kind of
+
+stuff early, because this is a problem that you have.
+
+Yeah.
+
+Don't you?
+
+Yeah.
+
+That you have lots of you have yourself as a
+
+resource.
+
+Yeah.
+
+And you have many demands on your time.
+
+And then what you have to do is work out
+
+a plan.
+
+That means you've got a certain amount of slack in
+
+terms of delivering the thing.
+
+Whereas what I think happens is you're very deadline driven.
+
+You know, there's a deadline coming up.
+
+So you put as much resource resource as you possibly
+
+can into it.
+
+Yeah.
+
+And uh, and then you kind of go from crisis
+
+to crisis to some extent, which is not such a
+
+great way of working.
+
+Uh, but maybe that's it.
+
+That's the academic condition.
+
+I don't know.
+
+Oh come on.
+
+Yeah.
+
+Okay, so now we're going to talk a little bit
+
+about risks because.
+
+When you look at projects and you look at producing
+
+products then essentially it's risk risk driven and you can't
+
+get rid of them.
+
+But what you can do is understand that they're there
+
+and that you you want to understand how they're evolving,
+
+and then you want to understand how they're how they're
+
+controlled.
+
+And, you know, if you look at, um, I don't
+
+know, you look at Hurricane Milton, for example.
+
+Yeah.
+
+Then there are a whole load of risks.
+
+Yeah.
+
+They started to assess it 4 or 5 days in
+
+advance.
+
+So you got an assessment.
+
+The risks were, uh, the risks were were enumerated and
+
+then people tried to control and the controls were things
+
+like going to safe places.
+
+So hurricane secure buildings or evacuating along roads, widening the
+
+roads.
+
+So people allowed the hard shoulders on the on the
+
+highways to be used.
+
+So they opened new lanes on the road so that
+
+you could get people out of the region and then
+
+having emergency services in there so that you can control
+
+the consequences of the thing.
+
+And then also you have continuous monitoring so people know
+
+exactly what's happening.
+
+And there's very detailed monitoring of just how high the
+
+water was going to get.
+
+You know, people had fairly accurate predictions of how big
+
+the storm surge was going to be.
+
+So lots of things that we do are oriented towards
+
+risk.
+
+And here we're going to look through these, uh, these
+
+particular ones of of looking at the generic risk of
+
+the management of the actual schedule.
+
+So if you like, that's the the project kind of
+
+risk and then the quality risk, which is the stuff
+
+that relates to the product.
+
+Really.
+
+Yeah.
+
+So um, people.
+
+Yeah.
+
+So and this is an important one.
+
+So loss of a staff member.
+
+Yeah.
+
+So one of the things we've been doing is looking
+
+a little bit at, um, the introduction of artificial intelligence
+
+and health systems and two things have been happening.
+
+Um, one is that AI savvy people in, in the
+
+NHS have been moving out to higher paid jobs in
+
+private companies.
+
+Yeah.
+
+And the other the other thing that's been happening is
+
+that in the regulators, the people who actually regulate the
+
+introduction of AI into health in the UK, that's also
+
+happened, you know, so some of the very senior people
+
+have gone off to people like drug companies and so
+
+on.
+
+Yeah, because they're very interested in the application of AI
+
+and the synergy between medical devices and drugs.
+
+And what's been happening is that actually there's been a
+
+loss of expertise.
+
+So if you look, you end up with people being
+
+unqualified for the task.
+
+And so you can try to you can try to
+
+have a successor.
+
+So you always have backup.
+
+You always think, how can we how can we do
+
+succession planning.
+
+You can build in education into your programs and say,
+
+okay, we're continuously educating people as they come in, and
+
+then think about what skills gap you have before embarking
+
+on a project and say, we need to have the
+
+skills that we need, and we need to think about
+
+those being sustainable and renewables.
+
+So we need to have people trained up, um, and
+
+then paying people adequately, uh, you know, so looking and
+
+saying, can you make sure that you pay them adequately,
+
+adequately by comparison with your competitors, because otherwise what they'll
+
+do is recruit them and then include decent training time
+
+in your project schedule.
+
+So those are the sorts of things that you can
+
+do with people, um, technology, uh, sorts of risks.
+
+Cuts.
+
+Yeah.
+
+You don't necessarily understand what that means.
+
+Is commercial off the shelf.
+
+Yeah.
+
+Um, and so you may have a, you may have
+
+a product that that has been used extensively that's commercially
+
+available.
+
+But when you pull that component into a new environment,
+
+then what you'll typically see is a higher fault rate.
+
+Um, and then the other thing that you might typical
+
+risk might be that you, you know, somebody promises the
+
+automation tools are going to do a great job for
+
+you.
+
+Um, and then they don't meet the expectations.
+
+uh, that you had or sometimes the exceed the expectations,
+
+you know, so I, I had a friend who, uh,
+
+was doing independent validation verification on an avionics system, and
+
+he had some tools that were so good that the
+
+the manufacturer eventually hired them.
+
+Yeah.
+
+So he moved into the manufacturing thing.
+
+The tools went with them.
+
+And then the company was stuck with trying to recruit
+
+a new IV and V team.
+
+So these things are think about taking extra time when
+
+you're bringing something else in.
+
+Think about making people more familiar with things like commercial
+
+off the shelf systems, and then do things like work
+
+out what your common errors are and work out what
+
+the what the kind of error pattern is, or the
+
+fault pattern is within your your process and try to
+
+get the tools that actually match your expectations with respect
+
+to that schedule risks?
+
+Yes.
+
+So it's you don't do enough unit testing.
+
+So that means that you see more cost and more
+
+delays pushed down the line, you know.
+
+So if you don't unit test properly, um, then what
+
+what you end up with is uh, is problems later
+
+in the line and you might find that you another
+
+risk would be that you find difficulty in scheduling meetings,
+
+uh, makes a inspection a bottleneck in development because you're
+
+trying to schedule lots and lots of different people to
+
+do some kind of, some kind of inspection.
+
+Um, on this unit testing one, I mean, there was
+
+a company, French company, Schneider Electric.
+
+Um, and they actually eliminated unit testing altogether because they
+
+trained up, uh, all their developers to do formal proof
+
+they were developing.
+
+I mean, it was it was very high reliability code.
+
+Yeah, but so it was quite simple code, you know,
+
+there was nothing too complicated.
+
+So the proofs were relatively simple and then but they
+
+still used real testing when they did integration.
+
+But what they found was the they probably got lower
+
+fault rates in the unit level when they did the
+
+formal proof, because it forced people to take longer when
+
+they were developing the code.
+
+So here.
+
+You can think about incentives are very important.
+
+So how do you incentivise people to do things?
+
+I mean, we were talking a bit about that in
+
+one of the earlier lectures.
+
+So if you say we'll have a reward system and
+
+the lure of the fault density, then the better you
+
+pay, then that might incentivise people to do that.
+
+Um, think about giving people time so that they can.
+
+So they can meet.
+
+Yeah.
+
+Um, there's one book, uh, in in the reading list
+
+called The Mythical Man Month.
+
+I mean, it's very historical, you know, because it was
+
+only men who developed software when this was written.
+
+Um, but because it was written, I think, in the
+
+1970s or something like that, and it was about experience
+
+on a big IBM project when they were developing their
+
+first operating system and they realised they were behind schedule.
+
+So what they did was they just pushed more effort
+
+into it.
+
+And what they discovered was that actually it didn't make
+
+much difference, because what happened was that each of the
+
+the team, they had so much problem coordinating things that
+
+the team leaders more or less spent their whole time
+
+talking to one another, trying to get things to line
+
+up.
+
+Yeah.
+
+And so if you if you add let's see 50
+
+extra people you don't get 50 extra people effort on
+
+it.
+
+Yeah.
+
+At least by comparison with the the human effort you've
+
+got on it before.
+
+So trying to keep teams small and trying to keep
+
+things relatively disconnected or, or low coupling essentially is is
+
+an important principle in, in trying to avoid schedule risks.
+
+Because otherwise if you introduce a lot of coordination, then
+
+you end up with serious problems with your schedule, uh,
+
+development risk.
+
+So here the quality is, the quality of the software
+
+isn't very good.
+
+Um, so that would be one example.
+
+So try and get early warnings so that that would
+
+be probably push testing back, maybe even adopt something like
+
+a test driven design approach where the tests are in
+
+existence before the development takes place.
+
+Um.
+
+and then try to use inspection techniques to fix things
+
+and connect development and inspection to the reward system.
+
+So they're incentivised to try and get better quality software
+
+delivered.
+
+And sometimes people will use testing as, as if you
+
+like hurdles that people have to jump over.
+
+Yeah.
+
+And that you get rewards for jumping quickly.
+
+Those are the sorts of things that you might see
+
+happening.
+
+Um, test execution.
+
+Execution costs are much higher than planned.
+
+Um, so.
+
+Those sorts of things.
+
+Then what you might have to do is to reduce
+
+the reduce the amount of testing that you do, or
+
+look at what you're testing and eliminate certain things.
+
+This might particularly happen when you do a lot of
+
+regression testing.
+
+So if you have if you have a system where
+
+you do regression testing, where you go back and run
+
+a whole load of tests over the code that you
+
+you've already you've already run through the code, then you
+
+may end up spending quite a lot of time testing
+
+stuff that you already know is is good.
+
+Yeah.
+
+So identifying what's changed and trying to focus the test
+
+around things that actually have changed in a serious way
+
+might be a way of doing that.
+
+Again, what that might be is what that might result
+
+in is is missing something because you have a knock
+
+on effect in these things.
+
+Um, requirements risk.
+
+Uh.
+
+So.
+
+Here it might be that you want a high assurance
+
+and a critical requirement might increase the the expense and
+
+uncertainty of the development process and think about.
+
+The planned testing effort with former projects that are similar
+
+to avoid underestimating the testing effort.
+
+So there, you know, if you want to demonstrate that
+
+something only feels 1 in 10 to the six operations,
+
+then trying to test to do that will mean you'll
+
+have very, very large numbers of tests and you'll have
+
+to generate the test, different test circumstances.
+
+And, uh, those things may take quite a long time
+
+to do.
+
+So it may be that you when you move into
+
+a high criticality area, you're trying to eliminate the need
+
+for the need for repeated testing.
+
+Yeah.
+
+Um, and again, try and isolate the part that are
+
+the parts that are really critical.
+
+So Quite often that will be.
+
+You might try to make.
+
+A backup system that operates when the primary system fails.
+
+So one one possible situation is I mean this is
+
+typical in shutdown systems that you have maybe quite a
+
+complex system which is controlling some kind of process, you
+
+know.
+
+So it might be I don't want to think of
+
+something dangerous near here.
+
+Yeah.
+
+There's a place called Mossman which is just across the
+
+forth.
+
+Yeah.
+
+It's a it's a cracker.
+
+It takes big hydrocarbon molecules and splits them down into
+
+smaller ones.
+
+And those kind of things are typically controlled by control
+
+software.
+
+But behind that then you'll typically find that there's a
+
+shut down system which is much simpler, which is just
+
+monitoring all the critical elements in it.
+
+And if they go out of order, then what it
+
+does is it controls the whole process to shut down
+
+to a safe state where it's not operating at all.
+
+Yeah.
+
+And so that may be the place that you need
+
+very, very high assurance on.
+
+And then you can be a little you can take
+
+less assurance on the large piece of software that does
+
+sophisticated control and monitors things and tries to optimise the
+
+throughput.
+
+And typically that's what you see.
+
+You'll see a control system that's trying to optimise.
+
+And then sitting behind it you see a shutdown system,
+
+which is much higher assurance, which just checks that all
+
+the parameters are within within limits.
+
+And so that software is much simpler.
+
+It requires less, it requires less testing to gain the
+
+same level of assurance.
+
+And that would be the typical sorts of things that
+
+you might look at for, I don't know, say say
+
+for pizza drones.
+
+Yeah.
+
+You might imagine a system that just checks it doesn't
+
+get it doesn't get anywhere near a no fly zone.
+
+Yeah.
+
+It doesn't try to optimise the path.
+
+Yeah.
+
+And that would be a, that would be a much
+
+simpler thing if you were worried about that.
+
+From a safety point of view that might be a
+
+much simpler thing to verify than making than the more
+
+complex thing which decides whether you know how the path
+
+goes and trying to optimise along the path and so
+
+on.
+
+Um, no.
+
+Um.
+
+This is a this is a complicated one.
+
+Um.
+
+If you think about contingencies.
+
+Yeah.
+
+So that's what happens if this, this bit of the
+
+plan goes wrong.
+
+So supposing I don't deliver on time or supposing I
+
+can't produce this component or supposing it's less quality than
+
+than I'd expect.
+
+Now, if you have a real, genuine fear that that's
+
+going to happen That should be included in your plan
+
+to begin with.
+
+But if something is sufficiently remote.
+
+Yeah.
+
+And what you might do then is to say, well,
+
+okay, so what are the what are the the sorts
+
+of things that might do and the, the tradition of
+
+doing these things is that you think about stuff that
+
+actually really is quite wacky, you know, so in, in
+
+process control, then you might think, well, I normally would
+
+think that fluid would be flowing in a particular direction
+
+along a pipe.
+
+Yeah.
+
+Well what happens if it's flowing in the opposite direction?
+
+And of course that does happen from time to time,
+
+you know.
+
+So if you look at, say things like the close
+
+to meltdown of Three Mile Island, that happened many years
+
+ago, then for some of the time, fluid was flowing
+
+the wrong way down the pipes.
+
+Yeah.
+
+So you think about those sorts of things and you
+
+think, well, if it's doing that, what would we do
+
+to recover?
+
+And so these things are, um.
+
+These things are based on the structure of the code
+
+that you've got.
+
+And then you think, well, okay, so supposing something really
+
+unusual happens and I'm able to detect it, what would
+
+I do in those circumstances.
+
+Yeah.
+
+So supposing you always expect that that you will find
+
+something in a particular database, then what do you do
+
+if you feel you know, if it's not there.
+
+Yeah.
+
+What's the what's the fallback position.
+
+Yeah.
+
+So those sorts of things.
+
+And so you need to have a plan B essentially
+
+if you're thinking about very high assurance systems.
+
+Um and then typically you evolve the plan as you
+
+go through.
+
+So you'll have a preliminary and then you'll release it
+
+through the, through the process.
+
+Yeah.
+
+And it might be that it's a living document.
+
+And actually there are incremental changes that go from one
+
+to the next, to the next, to the next.
+
+And it's it's a much finer grain changes, but nearly
+
+always in the background there's an emergency plan.
+
+And that might be, you know, how is it that
+
+we actually get to the point where we produce the
+
+thing that we need to produce?
+
+Yeah.
+
+So.
+
+Now what about we're concerned with process here, you know,
+
+because the plan says how the how the process is
+
+interact and how the processes operate.
+
+And what we want to see is, well, what happens
+
+if we deviate from the plan?
+
+Because when you when you detect deviation from the plan,
+
+then what you need to do is to do something
+
+that's going to improve things.
+
+And it depends on a plan that's realistic, well organised,
+
+clear and detailed, unambiguous milestones and criteria.
+
+And a process is visible to the extent that it
+
+can be effectively monitored.
+
+So it's visibility of a process is well.
+
+Do I know, um, that things are falling behind or
+
+the quality of this component isn't looking like it's going
+
+to actually hit the the requirement that I need?
+
+Or is it taking much longer to produce code of
+
+this type somewhere in my in my system?
+
+Yeah.
+
+So, you know, is it, is it obvious that high
+
+assurance code is taking me twice as long as I'm
+
+consistently estimating?
+
+Yeah.
+
+So these sorts of things are what makes things visible.
+
+Um, and you might, um, you know, look at data.
+
+So if you think about this is a number of
+
+builds of a piece of software and it's a mapping
+
+of the sorts of faults that you see, you know,
+
+so the little the little thing at the top is
+
+the total of all faults where you're just adding them
+
+together.
+
+Um, and you have this, you have critical faults that
+
+follow the square boxes, and then you have moderate faults
+
+that follow the crosses, and you have severe faults for
+
+the other one.
+
+And you might want to understand this, but you see
+
+that you keep getting a peak here.
+
+Yeah.
+
+On the fourth build.
+
+So or I mean, if you have this pattern across
+
+a number of different things, you can see that somehow
+
+or another, severe faults and even critical faults are.
+
+So if you look at these two, these are major
+
+contributor to this thing that somehow they're getting through in
+
+the early build stage.
+
+So maybe this is the stage where you're really starting
+
+to do the most complicated pieces, and then things started
+
+to decline after that.
+
+So the question is, are there things that we could
+
+move earlier, you know, at strategic level?
+
+Are there processes we could move earlier that would mean
+
+that this peak was lower?
+
+Yeah.
+
+Um, of course, the the graph that isn't here is
+
+how much effort is it taking for this.
+
+So does this peak mean there's also a huge peak
+
+here.
+
+And could we flatten that peak by moving some of
+
+the effort earlier in the in the process and reduce
+
+the amount of work later?
+
+So um, and then I'm going to talk briefly about
+
+two ways of, of looking at doing process improvement.
+
+Because what you might do is you might see and
+
+this is really a strategic level.
+
+So it's seeing how is it across a whole range
+
+of different projects you can start to look at process
+
+improvement, and this orthogonal orthogonal defect classification is a way
+
+of looking at several many projects and trying to gather
+
+together things.
+
+Root cause analysis is more project specific.
+
+It's more about finding out what's happening, but it still
+
+has strategic importance.
+
+Because if you see common factors across numbers of root
+
+cause analysis analyses, then you'd want to you'd want to
+
+to to, uh.
+
+To to take action, to change your process, to fix
+
+it.
+
+So orthogonal defect classification you've got it's an accurate classification
+
+schema for very large projects.
+
+And the idea is to distil an unmanageable amount of
+
+information.
+
+Yeah.
+
+And there's two main steps.
+
+One is you classify faults when they're detected and fixed.
+
+And then the other thing is that you and analyse
+
+the faults.
+
+And what this does is it gives you a kind
+
+of map of where the things are going wrong with
+
+your process.
+
+So when faults.
+
+So here's the fault classification.
+
+You classify things by what activities?
+
+Yeah.
+
+Do you see when the fault is revealed?
+
+You think about a trigger.
+
+That's something that is in the activity that exposed the
+
+fault.
+
+And then you think about the impact of the fault
+
+on the customer.
+
+And when faults are fixed, what was it that you
+
+changed in order to fix the fault?
+
+What was the type of the fault and where was
+
+it?
+
+So where was the fault?
+
+It could be in-house code.
+
+It could be library code.
+
+It could be outsourced code.
+
+And then how old is the faulty element?
+
+Is it new?
+
+Old.
+
+Rewritten.
+
+Re fixed.
+
+So these are the critical things in terms of looking
+
+at fault classification.
+
+Vacation.
+
+Oops.
+
+So and here are the sorts of activities and triggers
+
+that you might have.
+
+So review and code inspection might be an activity that
+
+you do.
+
+And then the kind of triggers.
+
+And then there's a bunch of different things that you
+
+might do when you're reviewing and looking at code.
+
+And then there are structural things when you do whitebox
+
+tests, and then there are functional things that trigger things.
+
+So these are the different activities you might carry out,
+
+you know, sort of review and classification.
+
+These are the triggers, structural whitebox testing.
+
+These are the sorts of triggers that you would have
+
+in there.
+
+And then functional, there's a bunch of different triggers you'd
+
+have there.
+
+And then system test, a bunch of different triggers you'd
+
+have there.
+
+Um, and the impact well they're, you're looking at what
+
+is the impact on different aspects of the product that
+
+you've got.
+
+And generally those are to do with eyelets.
+
+Yeah.
+
+So you could change all of these into eyelashes probably
+
+so you could see perform ability maintainability migrate ability document
+
+ability.
+
+So in general these are things that are not necessarily
+
+particularly functional.
+
+But what they are is the relate to um the
+
+quality of the thing that you have that you producing.
+
+Um, and here's an example.
+
+So you might consider fault type looking at the distribution
+
+of fault types versus activities, you know.
+
+So different quality activities target different classes of faults.
+
+So algorithmic faults they mainly have to do with unit
+
+testing.
+
+So you might expect a high proportion of faults detected
+
+by unit testing should belong to that class.
+
+Yeah.
+
+So in other words you'd say well okay what I
+
+do anticipate is that unit testing should detect algorithmic faults,
+
+which you might think.
+
+Algorithm.
+
+The algorithmic aspects tend to live within one component.
+
+And so you'd expect to see that.
+
+But if the proportion of algorithmic faults found during unit
+
+tests is small or larger than normal, or a larger
+
+number found integration test, then the unit tests probably aren't
+
+well designed.
+
+So maybe what you should do is go and do
+
+something different in your unit testing approach, how you how
+
+you design the test, and if the proportion of algorithmic
+
+faults found during integration testing is unusually large, then the
+
+integration testing may not focus strongly enough on interface faults.
+
+In other words, it could be focusing too much on
+
+what's happening inside the modules and not enough, and what's
+
+happening between the modules that you're building.
+
+So it might be that you have to strengthen that.
+
+So these are the sorts of these are the sorts
+
+of analysis that you can do in terms of looking
+
+at the way that things happen at this level and
+
+the distribution of triggers over time during field test.
+
+So faults corresponding to simple usage should arise during field
+
+test, while faults corresponding to complex usage should arise late.
+
+Yeah.
+
+And so where do you find.
+
+So here this is thinking well when when do my
+
+faults occur and what kind of faults occur.
+
+So the rate of disclosure of new faults should also
+
+decrease over time.
+
+So unexpected distribution of triggers over time may indicate poor
+
+system or acceptance testing.
+
+So if triggers that correspond to simple usage reveal many
+
+faults late in acceptance testing, then you may.
+
+It may be that your sample of usage may not
+
+be representative of the user population, because what you're doing
+
+is you're saying, um, that, uh, that you're reviewing simple
+
+faults late, which is not what you want.
+
+You want to bring them earlier.
+
+So and if you get continuous growing faults during acceptance
+
+test is observed then system testing media field as well.
+
+So you know, so if you see that you keep
+
+finding faults when you're giving the thing out and it's
+
+being going undergoing acceptance testing, then the system testing probably
+
+isn't good enough.
+
+Each distribution fault should be located in new and rewritten
+
+code.
+
+And the proportion of faults in you rewritten code with
+
+respect to the code base should gradually increase, because the
+
+old stuff settles down and its fault rate is decreasing.
+
+The new stuff you've got probably fixed, Uh, kind of
+
+in that.
+
+And so the relative proportion should, as the thing ages,
+
+should pan out so that it's mostly rewritten stuff that
+
+has a problem in it.
+
+Different age distributions might indicate holes in fault tracking, and
+
+removal might indicate inadequate test and analysis.
+
+So the example for that would be increase the faults
+
+located in base code after reporting might indicate that you
+
+haven't really worked out what the new environment that you're
+
+moving it to looks like, so that you haven't worked
+
+out what it is that you need to do.
+
+Um.
+
+And then you might think about the distribution of fault
+
+classes over time.
+
+So the proportion of missing code faults should gradually decrease
+
+because codes being provided percentage of extraneous faults may slowly
+
+increase because missing functionality should be revealed with use and
+
+repaired.
+
+So increasing number of missing faults might be a symptom
+
+of instability of the product, and a sudden sharp increase
+
+in extraneous faults might indicate a maintenance problem, that things
+
+are the environment's changing, but you hadn't picked that up.
+
+And so what you're seeing is faults that you're not
+
+expecting coming up, because the environment of use has changed
+
+significantly.
+
+So how do you improve the process?
+
+So here lots of classes of faults that occur frequently
+
+are rooted in process and development flaws.
+
+So thinking about process is very important in terms of
+
+trying to improve the quality.
+
+So shallow architectural design doesn't take account of resource allocation
+
+can lead to resource allocation faults.
+
+Because let's say you have two contending elements in the
+
+architecture, but you've not considered how they are connected, not
+
+by functionality, but by the way that you use resource.
+
+So if you have two things that heavily use a
+
+resource, then you might find that these two things end
+
+up contending.
+
+And the occurrence of many such faults can be reduced
+
+by modifying the process in the environment.
+
+So you think about resource allocation.
+
+Yeah.
+
+And you introduce specific inspection tasks that identify where things
+
+are going to contend for a resource.
+
+Those sorts of these sorts of things.
+
+You look at um, and so you identify weak aspects
+
+of a process that can be problematic.
+
+But looking at the fault history can help software engineers
+
+build a feedback mechanism to track.
+
+So sometimes information can be fed back directly into the
+
+current product development from from stuff that's finished more often.
+
+It helps engineers to improve the development of future product.
+
+Okay.
+
+And we're going to finish there.
+
+Yeah.
+
+Sorry I've overrun.
+
